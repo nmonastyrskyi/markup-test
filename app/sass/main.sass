@@ -1,0 +1,186 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "../libs/font-awesome-4.7.0/scss/font-awesome"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+h1,h2,h3,h4,h5,h6
+	margin: 0
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.title
+				font-family: 'play-bold'
+				font-size: 22px
+.purple
+	&::before
+		content: ''
+		background: linear-gradient(to right, rgba(8, 7, 45, 0.85), rgba(44, 31, 88, 0.85))
+		left: 0
+		top: 0
+		position: absolute
+		display: block
+		width: 100%
+		height: 100%
+.container
+	max-width: 960px
+p
+	font-size: 14px
+.dark
+	color: #fff
+.bright
+	color: #413d4b
+	p
+		color: rgba(#413d4b, 0.75)
+.header		
+	height: 670px
+	background-size:  cover
+	position: relative
+
+	&_top
+		margin-top: 35px
+
+	.header-nav
+		ul
+			font-family: 'roboto-black'
+			display: flex
+			justify-content: space-between
+			list-style-type: none
+			font-size: 13px
+
+			li
+				display: inline-block
+				&.active
+					color: $accent
+	.header__content
+		margin-top: 135px
+		position: relative
+		text-align: center
+		margin-bottom: 117px
+		.header__content__text
+			margin-bottom: 50px
+		.title
+			font-size: 32px
+			margin-bottom: 21px
+			font-family: play-black
+			&:after
+				content: ''
+				width: 50px
+				height: 1px
+				background-color: $accent
+				position: absolute
+				top: 62px
+				left: 50%
+				margin-left: -25px
+	.col-md-10 
+		z-index: 3
+		p
+			font-size: 14px
+
+.btn
+	color: $accent
+	border: 1px solid $accent
+	padding: 9px 12px
+	font-family: "hammerSmith"
+	line-height: 0
+.dot_nav
+	position: relative
+	display: inline-block
+	left: 50%
+	transform: translateX(-50%)
+.dot
+	border-radius: 50px
+	border: 1px solid white;
+	width: 8px
+	height: 8px
+	position: relative
+	display: inline-block
+	&.active
+		background-color: rgb(101,220,207)
+		border-color: rgb(101,220,207)
+
+.story
+	margin-bottom: 112px
+	position: relative
+	&_content
+		margin-top: 72px
+		&_text
+		.btn-story
+			position: relative
+			top: 35px
+
+.video
+	position: relative
+	height: 550px
+	width: 100vw
+	.video-content
+		position: relative
+		left: 50%
+		top: 200px
+		display: inline-block
+		transform: translateX(-50%)
+		// display: block
+	.play-icon
+		left: 50%
+		transform: translateX(-50%)
+		position: relative
+		margin-bottom: 30px
+
+	.video-p
+		margin: 0
+		font-size: 16px
+		font-family: "roboto-black"
+
+.expertise
+	.title,.expertise-p
+		text-align: center
+		// display: block
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+
+
+@import "media" // Всегда в конце
