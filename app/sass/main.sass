@@ -52,6 +52,7 @@ body
 				font-family: 'play-bold'
 				font-size: 22px
 .purple
+	color: #fff
 	&::before
 		content: ''
 		background: linear-gradient(to right, rgba(8, 7, 45, 0.85), rgba(44, 31, 88, 0.85))
@@ -65,8 +66,7 @@ body
 	max-width: 960px
 p
 	font-size: 14px
-.dark
-	color: #fff
+
 .bright
 	color: #413d4b
 	p
@@ -121,7 +121,6 @@ p
 	border: 1px solid $accent
 	padding: 9px 12px
 	font-family: "hammerSmith"
-	line-height: 0
 .dot_nav
 	position: relative
 	display: inline-block
@@ -280,6 +279,116 @@ p
 		margin-top: 65px
 		text-align: center
 
+.works
+	&_top
+		margin-top: 68px
+		margin-bottom: 65px
+		.title
+			float: left
+		.dribbble
+			float: right
+	.works_examples-block
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		left: 50%
+		transform: translateX(-50%)
+		position: relative
+	.works_examples-block_item
+		flex-basis: 266.6px
+		height: 200px
+	.btn-works
+		display: block
+		margin: 70px auto
+		position: relative
+		text-align: center
+		line-height: 23px
+		height: 38px
+		width: 140px
+
+.testimonials
+	height: 500px
+	position: relative
+	text-align: center
+	.quotes
+		font-size: 100px
+		font-family: 'play'
+		text-align: center
+		position: relative
+		margin: 65px auto 0px
+		line-height: 65px
+	&_text
+		margin-bottom: 40px
+	.name
+		font-size: 14px
+		position: relative
+		font-family: 'roboto-black'
+	.position
+		font-size: 13px
+		opacity: .7
+		position: relative
+		margin-bottom: 40px
+	.fa-angle-left,.fa-angle-right
+		font-size: 35px
+		vertical-align: middle
+		position: relative
+		color: rgb(159,159,159)
+	.fa-angle-left
+		margin-right: 30px
+	.fa-angle-right
+		margin-left: 15px
+	.face
+		position: relative
+		margin-right: 14px
+
+.form-article
+	.title
+	margin-top: 60px
+	.form
+		height: 460px
+		justify-content: space-between
+		margin-top: 28px
+		margin-bottom: 70px
+		display: flex
+		flex-direction: column
+	.input
+		height: 43px
+		padding: 20px
+
+	.message
+		height: 198px
+		padding: 10px 20px
+		resize: none
+		border-color: rgb(229,229,229)
+
+	.input::-webkit-input-placeholder,.message::-webkit-input-placeholder
+		opacity: .5
+		font-size: 14px
+	.input::-moz-placeholder,.message:-moz-placeholder
+		opacity: .5
+	.input:-moz-placeholder,.message:-moz-placeholder
+		opacity: .5
+	.input:-ms-input-placeholder,.message:-ms-input-placeholde
+		opacity: .5
+		font-size: 14px
+
+	.btn-submit
+		text-align: center
+		width: 120px
+		height: 40px
+
+.client
+	.client-logos_block
+		display: flex
+		justify-content: space-between
+		margin-top: 44px
+	.block-left,.block-right 
+		height: 415px
+		width: 165px
+		justify-content: space-between
+		align-items: center
+		display: flex
+		flex-direction: column
 
 
 @import "media" // Всегда в конце
