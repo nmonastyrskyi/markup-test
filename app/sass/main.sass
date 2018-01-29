@@ -229,6 +229,57 @@ p
 	max-width: 100%
 	height: auto
 
+.team
+	height: 712px
+	width: 100%
+	position: relative
+	.title_block
+		margin-top: 72px
+		position: relative
+		.title
+			position: relative
+			text-align: center
+		p
+			position: relative
+			text-align: center
+			margin: 0
+			&:after
+				content: ''
+				width: 50px
+				height: 1px
+				background-color: rgba(#f9f9f9, 0.2)
+				position: absolute
+				top: 42px
+				left: 50%
+				margin-left: -25px
+	.team_block
+		margin-top: 65px
+		display: flex
+		justify-content: space-around
+		position: relative
+		.team_item
+			&_text
+				text-align: center
+				padding-top: 21px
+				padding-bottom: 25px
+				border: 1px solid rgba(#fafafa, 0.5)
+				.name
+					font-size: 14px
+					font-family: 'roboto-black'
+				.position
+					font-size: 13px
+					font-weight: 100
+					opacity: .7
+
+		.resolution_220-229
+			width: 220px
+			height: 229px
+			position: relative
+	.team_bottom_block
+		position: relative
+		margin-top: 65px
+		text-align: center
+
 
 
 @import "media" // Всегда в конце
