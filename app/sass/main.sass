@@ -196,7 +196,6 @@ p
 		margin-top: 30px
 		&_item
 			&:nth-child(3n)
-				border: none
 			display: block
 			padding-bottom: 40px
 			padding-top: 40px
@@ -215,7 +214,7 @@ p
 				padding: 0 20px
 				color: rgba(#333, 0.75)
 				font-size: 14px
-.expertise_block_item:first-child::after
+.expertise_block_item:first-child:after
 	content: ''
 	background-color: rgb(235, 235,235)
 	width: 100%
@@ -391,8 +390,10 @@ p
 		flex-direction: column
 
 .footer
-	height: 400px
+	min-height: 400px
 	position: relative
+	background-size: cover!important
+	background-repeat: no-repeat!important
 	.content
 		margin-top: 90px
 		margin-bottom: 28px

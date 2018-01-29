@@ -13,11 +13,102 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	.header
+		.logo-container img
+			margin-left: 50%
+			transform: translateX(-50%)
+		.header-nav ul
+			margin-left: 0
+		.header__content
+			margin-top: 80px
+
+	.story
+		.big-logo
+			margin-left: 50%
+			transform: translateX(-50%)
+		.story_content_text
+			text-align: center
+			margin-top: 30px
+	
+	.form-article
+		.title
+			text-align: center
+		.btn-submit
+			margin-left: 50%
+			transform: translateX(-50%)
+	.client
+		.title
+			text-align: center
+		.client-logos_block
+			justify-content: space-around
+			margin-bottom: 60px
+	.expertise_block
+	.expertise_block_item
+		border:  1px solid rgb(235, 235,235)
+		border-radius: 10px
+		margin-bottom: 20px
+	.expertise_block_item:first-child:after
+		display: none
+	
+	.team_block	
+		.team_item
+			flex-basis: 200px
+			margin-right: 5px
+			.resolution_220-229
+				width: 100%
+				min-height: 150px
+				height: auto
 
 
+	.footer	
+		.content 
+			.social_block
+				width: 130px
+				height: 110px
+				margin: auto
+			.paper-plane
+				display: none
+	
+	
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.footer
+		.content
+			margin-top: 0
+			text-align: center
+			.contacts
+				display: flex
+				justify-content: space-around
+				text-align: left
+				margin-bottom: 20px
+				.adress
+					margin-top: 10px
+					width: 45%
+				.phone
+					margin-top: 10px			
+					text-align: center
+			.content_block
+				display: flex
+				align-items: center
+				justify-content: space-around
+				margin-top: 10px
+				.subscribe
+					margin: 0px
+				.social_block
+					width: auto
+					height: auto
+					margin: 0
+					.fa
+						margin: 0
+	.footer .content .logo-small
+		transform: translate(0)			
+		margin: 10px auto
+
+	.consult
+		left: 50%
+		display: inline-block
+		transform: translateX(-50%)
 
 
 /* Extra Small Devices, Phones */
