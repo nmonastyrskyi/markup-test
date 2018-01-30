@@ -48,6 +48,12 @@ body
 	overflow-x: hidden
 	opacity: 1
 
+a
+	text-decoration: none
+	color: inherit
+	transition: all 0.5s ease
+	&:hover,&:active,&:focus
+		text-decoration: none
 .title
 				font-family: 'play-bold'
 				font-size: 22px
@@ -91,6 +97,8 @@ p
 				display: inline-block
 				&.active
 					color: $accent
+				a:hover
+					color: $accent
 	.header__content
 		margin-top: 135px
 		position: relative
@@ -121,6 +129,12 @@ p
 	border: 1px solid $accent
 	padding: 9px 12px
 	font-family: "hammerSmith"
+	transition: all 0.5s ease
+	cursor: pointer
+	&:hover,&:focus,&:active
+		text-decoration: none
+		color: rgb(94,163,201)
+		border-color:  rgb(94,163,201)
 .dot_nav
 	position: relative
 	display: inline-block
@@ -157,17 +171,24 @@ p
 		top: 200px
 		display: inline-block
 		transform: translateX(-50%)
-		// display: block
+		cursor: pointer
+		&:hover, &:active, &:focus
+			color: $accent
+
 	.play-icon
 		left: 50%
 		transform: translateX(-50%)
 		position: relative
 		margin-bottom: 30px
+		transition: all 0.5s ease
+		&:hover
+			transform: scale(1.1) translateX(-45%)
 
 	.video-p
 		margin: 0
 		font-size: 16px
 		font-family: "roboto-black"
+
 
 .expertise
 	position: relative
@@ -228,7 +249,8 @@ p
 	height: auto
 
 .team
-	height: 712px
+	min-height: 712px
+	background-size: cover!important
 	width: 100%
 	position: relative
 	.title_block
@@ -255,10 +277,13 @@ p
 		display: flex
 		justify-content: space-around
 		position: relative
-		.team_item
+		.team_item				
+			transition: all 0.5s ease
+			cursor: pointer
 			&_text
 				text-align: center
 				padding-top: 21px
+				transition: all 0.5s ease
 				padding-bottom: 25px
 				border: 1px solid rgba(#fafafa, 0.5)
 				.name
@@ -268,6 +293,9 @@ p
 					font-size: 13px
 					font-weight: 100
 					opacity: .7
+			&:hover
+				.team_item_text
+					border-color: $accent
 
 		.resolution_220-229
 			width: 220px
@@ -286,6 +314,10 @@ p
 			float: left
 		.dribbble
 			float: right
+			transition: all 0.5s ease
+			&:hover,&:focus,&:active
+				text-decoration: none
+				color: $accent
 	.works_examples-block
 		display: flex
 		flex-wrap: wrap
@@ -296,6 +328,11 @@ p
 	.works_examples-block_item
 		flex-basis: 266.6px
 		height: 200px
+		transition: all 0.5s ease
+		cursor: pointer
+		&:hover
+			outline: 3px solid $accent
+			z-index: 2
 	.btn-works
 		display: block
 		margin: 70px auto
@@ -306,7 +343,8 @@ p
 		width: 140px
 
 .testimonials
-	height: 500px
+	min-height: 500px
+	background-size: cover!important
 	position: relative
 	text-align: center
 	.quotes
@@ -418,7 +456,8 @@ p
 			align-items: flex-start
 			.phone_text
 				margin: 0 0 0 15px
-
+				&:hover
+					color: $accent
 		.subscribe
 			width: 211px
 			height: 45px
@@ -436,14 +475,21 @@ p
 			margin-top: 30px
 
 		.social_block
+			cursor: pointer
 			.fa
 				border: 1px solid white
 				padding: 9px 11.5px
 				border-radius: 50px
 				margin-right: 3px
 				margin-top: 28px
+				color: #fff
+				transition: all 0.5s ease
 				&:last-child
 					margin-right: 0
+				&:hover, &:focus,&:active
+					color: $accent
+					border-color: $accent
+
 			.fa-twitter
 					padding: 9px 9px
 			.fa-dribbble
@@ -461,10 +507,18 @@ p
 
 	.consult
 		position: relative
+		cursor: pointer
 	.consult-item
+		color: #fff
 		font-family: "roboto"
 		display: inline-block
 		margin-right: 32px
+		transition: all 0.5s ease
+		&:last-child
+			margin-right: 0
+		&:hover
+			text-decoration: none
+			color: $accent
 
 
 @import "media" // Всегда в конце
